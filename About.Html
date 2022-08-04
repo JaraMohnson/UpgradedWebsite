@@ -1,7 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html style="
+height: 100%;
+overflow-y: hidden;
+" lang="en">
+<!--    page meta data: answers questions the browser has like: "where do i get the code from bootstrap?" "WHere do i get my fonts?" -->
+<head> 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,17 +17,23 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css"></link>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <div
-    style="
-      font-family: 'DM Sans', sans-serif;
-      background-image: url(https://i.pinimg.com/originals/e6/65/d4/e665d4c8f993cc059091dd4c247a2183.jpg);
-    "
-  >
+</head>
+<body
+style="
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+  background-image: url(https://i.pinimg.com/originals/e6/65/d4/e665d4c8f993cc059091dd4c247a2183.jpg);
+  height: 100%;
+  overflow-y: scroll;">
+
     <nav class="navbar navbar-expand-sm sticky-top">
       <!-- Links -->
       <ul class="navbar-nav">
@@ -51,12 +60,11 @@
         </li>
       </ul>
     </nav>
+
     <div class="container">
+
         <div class="row">
           <h2 class="text-center">In-Depth</h2>
-          
-        </div>
-        <div class="row">
           <p class="col-6 offset-3">
            I am an animal lover, fitness nut, and spend most of my money traveling the world. 
            I am mostly vegetarian with goals of opening up an animal sanctuary some day. I 
@@ -68,8 +76,9 @@
            will follow with patience. 
           </p>
         </div>
-        <h4 class="text-center">Why Am I REALLY Here?</h4>
+
         <div class="row">
+          <h4 class="text-center">Why Am I REALLY Here?</h4>
           <p class="col-6 offset-3">
            While I don't regret a second that I spent in my previous jobs, I did feel my creativity fading away. 
            I was in a position that didn't allow for experimentation since I had to follow government guidelines. 
@@ -79,46 +88,53 @@
            patterns has been a blessing and I can feel myself coming "back to life"! 
           </p>
         </div>
-        
 
 
-    <h3 style="text-align: center; color: darkslategrey">QUICK FACTS</h3>
+        <!-- FUN FACTS-->
+      <div class="fun-facts-row">
+
+          <div class="card col-3" style="padding: 0px">
+            <div class="card-header">My Favorite Foods?</div>
+            <div class="card-body, text-center">
+              Sushi, Tofu, Rice, Angel Food Cake, Pancakes, Oreos, Pretzels, Vegan
+              Chicken Nuggets
+            </div>
+          </div>
+  
+          <div class="card col-3" style="padding: 0px">
+            <div class="card-header">Favorite Animals?</div>
+            <div class="card-body, text-center">
+            Dogs, Lizards, Cows, Cats, Big Cats, Snakes
+            </div>
+          </div>
+  
+        <div class="card col-3" style="padding: 0px">
+          <div class="card-header">Favorite Travel Destinations So Far?</div>
+          <div class="card-body, text-center">
+            Florianopolis (Brazil), Tokyo, Rome, Berlin, Stockholm
+          </div>
+          <div class="card-footer">
+            ...Next Goal? Iceland, Swiss Alps, Budapest
+          </div>
+        </div>
+
+      </div>
+  </div>
     <!-- FUN FACTS-->
-    <div class="row">
-      <div class="card col-4" style="padding: 0px">
-        <div class="card-header">My Favorite Foods?</div>
-        <div class="card-body, text-center">
-          Sushi, Tofu, Rice, Angel Food Cake, Pancakes, Oreos, Pretzels, Vegan
-          Chicken Nuggets
-        </div>
-      </div>
-      <div class="card col-4" style="padding: 0px">
-        <div class="card-header">Favorite Animals?</div>
-        <div class="card-body, text-center">
-          Dogs, Lizards, Cows, Cats, Big Cats, Snakes
-        </div>
-      </div>
-      <div class="card col-4" style="padding: 0px">
-        <div class="card-header">Favorite Travel Destinations So Far?</div>
-        <div class="card-body, text-center">
-          Florianopolis (Brazil), Tokyo, Rome, Berlin, Stockholm
-        </div>
-        <div class="card-footer">
-          ...Next Goal? Iceland, Swiss Alps, Budapest
-        </div>
-      </div>
-</div>
-</div>
-    <!-- FUN FACTS-->
 
+    <!-- 
+      FIXED = element cannot move with the rest of the screen.
+      LEFT = X number of units away from the left side of the screen
+      bottom = X number of units
+    -->
+    <footer style="position: fixed; left: 0; bottom: 0; width: 100%">
+      "You miss 100% of the shots you don't take" - Wayne Gretzky -- Michael Scott
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-  </body>
-  <footer style="position: fixed; left: 0; bottom: 0; width: 100%">
-    "You miss 100% of the shots you don't take" - Wayne Gretzky -- Michael Scott
-  </footer>
+</body>
 </html>
